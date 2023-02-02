@@ -1,6 +1,9 @@
 /* Navbar Styling */
 .navbar {
-    background-color: black;
+    /* background-color: black; */
+    background-color: ##263b71; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #263b71 , #35497b);
+    
 }
 
 
