@@ -28,7 +28,7 @@ body {
   /* I want to create a black block slope design where the game thumbnail and description will be nested inside,
   so I'm dividing it into 2 shapes: one black slope, one black square. */
 .shape1 {
-    bottom: -51%;
+    bottom: -37%;
     border-top: calc(40px + 4vw) solid transparent;
     border-right: 100vw solid rgb(0, 0, 0);
         display: block;
