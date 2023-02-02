@@ -35,12 +35,6 @@ body{
     left: 5px;
 }
 
-.shape2 {
-    background-color: rgb(0, 0, 0);
-    padding-bottom: 400px;
-    transition: padding-bottom .5s,padding-top .5s;
-}
-
 h1, h2, h3, p {
     color: rgb(255, 255, 255);
 }
