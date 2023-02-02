@@ -1,3 +1,10 @@
+/* Navbar Styling */
+.navbar {
+    background-color: black;
+}
+
+
+
 /* Styling the Jumbotron */
 .jumbotron {
     background-image: url(https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/7258853/483244_974602.jpeg);
