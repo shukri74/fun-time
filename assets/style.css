@@ -1,12 +1,11 @@
-/* .navbar {
-    position: absolute;
-    text-align: center;
-    text-justify: ;
-width: 1440px;
-height: 164px;
-left: 0px;
-top: 0px;
-
-background: #F12455;
-} */
-
+/* Styling the Jumbotron */
+.jumbotron {
+    background-image: url(../assets/funtime-banner.png);
+    background-size:contain;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px #333;
+  }
