@@ -1,12 +1,11 @@
-body {
-    background-color: black;}
-
-    /* Navbar Styling */
+body{
+    background-color: black;
+}
+/* Navbar Styling */
 /* I used !important to override Bootstrap's own predefined documented CSS */
 .navbar {
     background-color: black !important;
     height: 100px;
-    background-image: linear-gradient(to right, #263b71 , #35497b);
 }
 .navbar-brand {
     font-size: 40px;
@@ -28,7 +27,7 @@ body {
   /* I want to create a black block slope design where the game thumbnail and description will be nested inside,
   so I'm dividing it into 2 shapes: one black slope, one black square. */
 .shape1 {
-    bottom: -37%;
+    bottom: -51%;
     border-top: calc(40px + 4vw) solid transparent;
     border-right: 100vw solid rgb(0, 0, 0);
         display: block;
