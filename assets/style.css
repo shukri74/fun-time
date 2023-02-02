@@ -1,11 +1,12 @@
-body{
-    background-color: black;
-}
-/* Navbar Styling */
+body {
+    background-color: black;}
+
+    /* Navbar Styling */
 /* I used !important to override Bootstrap's own predefined documented CSS */
 .navbar {
     background-color: black !important;
     height: 100px;
+    background-image: linear-gradient(to right, #263b71 , #35497b);
 }
 .navbar-brand {
     font-size: 40px;
