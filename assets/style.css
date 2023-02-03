@@ -38,7 +38,9 @@ body{
     border-right: 100vw solid rgb(0, 0, 0);
         display: block;
     position: absolute;
-    left: 5px;
+    bottom: -229px;
+    left: -17px;
+   
 }
 
 h1, h2, h3, p {
