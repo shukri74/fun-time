@@ -1,21 +1,12 @@
-body{
-    background-color: black;
-}
-
 /* Navbar Styling */
-/* I used !important to override Bootstrap's own predefined documented CSS */
 .navbar {
-    background-color: black !important;
-    height: 100px;
-}
-.navbar-brand {
-    font-size: 40px;
+    /* background-color: black; */
+    background-color: #263b71; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #263b71 , #35497b);
+    
 }
 
-/*styling the logo */
-.logo {
-    margin-top: 20px;
-}
+
 
 /* Styling the Jumbotron */
 .jumbotron {
@@ -27,20 +18,5 @@ body{
     justify-content: center;
     color: white;
     text-shadow: 1px 1px #333;
-    margin-bottom: 0px;
   }
 
-  /* I want to create a black block slope design where the game thumbnail and description will be nested inside,
-  so I'm dividing it into 2 shapes: one black slope, one black square. */
-.shape1 {
-    bottom: -51%;
-    border-top: calc(40px + 4vw) solid transparent;
-    border-right: 100vw solid rgb(0, 0, 0);
-        display: block;
-    position: absolute;
-    left: 5px;
-}
-
-h1, h2, h3, p {
-    color: rgb(255, 255, 255);
-}
