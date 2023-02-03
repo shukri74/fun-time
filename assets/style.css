@@ -1,6 +1,7 @@
 body{
     background-color: black;
 }
+
 /* Navbar Styling */
 /* I used !important to override Bootstrap's own predefined documented CSS */
 .navbar {
@@ -9,6 +10,11 @@ body{
 }
 .navbar-brand {
     font-size: 40px;
+}
+
+/*styling the logo */
+.logo {
+    margin-top: 20px;
 }
 
 /* Styling the Jumbotron */
