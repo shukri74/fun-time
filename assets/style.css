@@ -30,17 +30,21 @@ body{
     margin-bottom: 0px;
   }
 
-  /* I want to create a black block slope design where the game thumbnail and description will be nested inside,
-  so I'm dividing it into 2 shapes: one black slope, one black square. */
+  /* I want to create a black block slope design where the game thumbnail and description will be nested inside
+  upon search */
 .shape1 {
     bottom: -51%;
     border-top: calc(40px + 4vw) solid transparent;
     border-right: 100vw solid rgb(0, 0, 0);
         display: block;
     position: absolute;
-    bottom: -229px;
+    bottom: -203px;
     left: -17px;
    
+}
+
+.bi {
+    color: red;
 }
 
 h1, h2, h3, p {
