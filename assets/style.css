@@ -1,8 +1,12 @@
+body {
+    background-color: black;
+}
+
 /* Navbar Styling */
 .navbar {
     /* background-color: black; */
-    background-color: #263b71; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, #263b71 , #35497b);
+    background-color: #000000; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #000000 , #6255d7);
     
 }
 
