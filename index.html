@@ -1,95 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fun Time 🎮</title>
-  <!--Bootstrap CSS-->
+  <meta charset="utf-8">
+  <title>Favorite Games</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!--Our CSS-->
-<link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
-  <!--Navbar-->
-  <a href="index.html">
-  <div class="navigation-bar">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
-    <img src="./assets/funtime-logo.png" href="#"
-    <!-- class="navbar-brand" href="#" Fun Time -->
-  </a>
-    
-    
-  </nav>
-    <!-- <p>Resize this responsive page to see the effect!</p>  -->
-  </div>
-
-
-  <!--Jumbrotron/Banner/Hero Image-->
-  <div class="herobanner">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Find Your Favorite Game</h1>
-        <p class="lead">Use the search bar below to find games based on your preferences.</p>
-    
-        <!-- Search bar -->
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search..." aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Search</button>
-    </form>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
-  
- <!-- Two-column section with game thumbnail and game description-->
- <div class="game">
-  <div class="container my-5">
-  <div class="row">
-    <!-- Image of game (but I don't have one for now so i'm using a placeholder) -->
-    <div class="col-md-6 hover-overlay">
-      <img src="https://via.placeholder.com/400x400" alt="Placeholder Image">
-    </div>
-
-    <!-- Description of game column -->
-    <div class="col-md-6">
-      <h2>Game Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel libero et diam tempor bibendum. Proin aliquam, ligula id efficitur varius, odio libero placerat quam, vel tempor justo quam et dui. Sed viverra tellus vel est facilisis, vel fringilla enim varius.</p>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-  <div class="container">
-    <div class="row" id="game-section">
-      <!-- <div class="col-sm-4">
-        <h3 >Game 1</h3>
-        <p>Blah Blah Blah</p>
-      </div> -->
-      <!-- <div class="col-sm-4">
-        <h3>Game 2</h3>
-        <p>Blah Blah Blah</p>
+   <!--Navbar-->
+      <div class="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+          <a href="#">
+            <img src="./assets/images/funtime-logo.png"/>
+          </a>
+        </nav>
       </div>
-      <div class="col-sm-4">
-        <h3>Game 3</h3>
-        <p>Blah Blah Blah</p>
-      </div> -->
-    </div>
-  </div>
 
+    <!-- header section -->
+    <main>
+      <section class="header">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="">Find Your Favorite Game</h1>
+            <p class="">Use the search bar below to find games based on your preferences.</p>
+        
+            <!-- Search bar -->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search..." aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Search</button>
+        </form>
+        </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/js/script.js"></script>
+      </section>
+
+      <section id="games">
+        <div class="container">
+          <h3 class="section-heading text-center">Favorite Games</h3>
+          <div class="btn-group">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter By
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" id="name" href="#">Name</a>
+              <a class="dropdown-item" id="rating" href="#">Rating</a>
+              <a class="dropdown-item" id="released" href="#">Released Date</a>
+            </div>
+          </div>
+          <hr>
+            <div class="card-deck row" id="game-section">
+              <div class="card">
+                <img class="card-img-top" src="https://www.freetogame.com/g/540/thumbnail.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Game Name 1</h5>
+                  <p class="card-text">A hero-focused first-person team shooter from Blizzard Entertainment.</p>
+                  <p><strong>Genre: </strong>Shooter</p>
+                  <p><strong>Plateform: </strong>PC (Windows)</p>
+                  <a href="#" class="btn btn-secondary">Game Live URL</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><strong>Released Date: </strong>04-12-2022</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://www.freetogame.com/g/521/thumbnail.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Game Name 2</h5>
+                  <p class="card-text">Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.</p>
+                  <p><strong>Genre: </strong>ARPG</p>
+                  <p><strong>Plateform: </strong>PC (Windows)</p>
+                  <a href="#" class="btn btn-secondary">Game Live URL</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><strong>Released Date: </strong>04-12-2022</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://www.freetogame.com/g/517/thumbnail.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Game Name 3</h5>
+                  <p class="card-text">Get into the action in one of the longest running battle royale games PUBG Battlegrounds.</p>
+                  <p><strong>Genre: </strong>Shooter</p>
+                  <p><strong>Plateform: </strong>PC (Windows)</p>
+                  <a href="#" class="btn btn-secondary">Game Live URL</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><strong>Released Date: </strong>04-12-2022</small>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+<!-- This data will comes from other Api -->
+      <section id="more-games">
+        <div class="container">
+          <h3 class="section-heading text-center">More Games</h3>
+          <hr>
+            <div class="card-deck row" id="more-game-section">
+              <div class="card">
+                <img class="card-img-top" src="https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Game Name 1</h5>
+                  <!-- <p class="card-text">A hero-focused first-person team shooter from Blizzard Entertainment.</p> -->
+                  <p><strong>Genre: </strong>Action</p>
+                  <p><strong>Plateform: </strong>PC (Windows)</p>
+                  <!-- <a href="#" class="btn btn-secondary">Game Live URL</a> -->
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><strong>Released Date: </strong>17-02-2013</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Game Name 2</h5>
+                  <!-- <p class="card-text">Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.</p> -->
+                  <p><strong>Genre: </strong>ARPG</p>
+                  <p><strong>Plateform: </strong>PC (Windows)</p>
+                  <!-- <a href="#" class="btn btn-secondary">Game Live URL</a> -->
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><strong>Released Date: </strong>04-12-2022</small>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Game Name 3</h5>
+                  <!-- <p class="card-text">Get into the action in one of the longest running battle royale games PUBG Battlegrounds.</p> -->
+                  <p><strong>Genre: </strong>Shooter</p>
+                  <p><strong>Plateform: </strong>PC (Windows)</p>
+                  <!-- <a href="#" class="btn btn-secondary">Game Live URL</a> -->
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><strong>Released Date: </strong>04-12-2022</small>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer mt-2">
+      <div class="container">
+        <p class="text-center p-3">&copy; Copyright <strong>Group-13</strong>. All Rights Reserved.</p>
+      </div>
+    </footer>
+      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
 </html>

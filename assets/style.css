@@ -1,6 +1,6 @@
 /* Navbar Styling */
-.navbar {
-    /* background-color: black; */
+.navbar, footer {
+    color: white;
     background-color: #263b71; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, #263b71 , #35497b);
     
@@ -19,4 +19,8 @@
     color: white;
     text-shadow: 1px 1px #333;
   }
+
+.section-heading{
+    padding: 20px;
+}
 
