@@ -1,11 +1,13 @@
+body {
+    background-color: black;
+}
 /* Navbar Styling */
 .navbar, footer {
     color: white;
-    background-color: #263b71; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, #263b71 , #35497b);
+    background-color: #000000; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,  #000000 , #602ec8);
     
 }
-
 
 
 /* Styling the Jumbotron */
@@ -22,5 +24,14 @@
 
 .section-heading{
     padding: 20px;
+    color: white;
 }
 
+.shape1 {
+    display: block;
+    position: absolute;
+    bottom: -258px;
+    left: -17px;
+    border-top: calc(40px + 4vw) solid transparent;
+    border-right: 100vw solid rgb(0, 0, 0); 
+}
