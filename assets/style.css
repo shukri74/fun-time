@@ -22,7 +22,7 @@
 
   /* I want to create a black block slope design where the game thumbnail and description will be nested inside
   upon search */
-.shape1 {
+/* .shape1 {
     bottom: -51%;
     border-top: calc(40px + 4vw) solid transparent;
     border-right: 100vw solid rgb(0, 0, 0);
@@ -30,8 +30,7 @@
     position: absolute;
     bottom: -203px;
     left: -17px;
-   
-}
+} */
 
 .bi {
     color: red;
