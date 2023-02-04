@@ -44,8 +44,18 @@ h1, h2, h3, p {
     color: rgb(255, 255, 255);
 }
 
-/* filter button */
+/* filter drop-down button */
 .dropdown {
-    float: right;
-    
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    width: 1250px; 
+}
+
+
+.game-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
