@@ -58,6 +58,34 @@ $( document ).ready(function() {
   
   });
 
+  $(".search").on("click", function(event) {
+    event.preventDefault();
+  
+    // Here we grab the text from the input box
+    // var alphabetical = $("#alphabetical").text().toLowerCase();
+    // console.log(alphabetical);
+    var search = $("#search").val();
+    console.log(search);
+  
+    // Here we construct our URL
+    var queryURL='';
+    queryURL = "https://free-to-play-games-database.p.rapidapi.com/api/games?category="+search;
+    $.ajax({
+      url: queryURL,
+      headers: {
+        "X-RapidAPI-Key": "6d8cefb524msh8e89bc188680a3ap10ab72jsne7d1c162c88c",
+        "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com"
+      },
+      method: "GET"
+    }).then(function(response) {
+      var res = response;
+      console.log(res)
+      displayGames(res);
+      
+    });
+  
+  });
+
 function displayGames(response) {
   $('#game-section').empty();
   for (let i = 0; i < 8; i++) {
