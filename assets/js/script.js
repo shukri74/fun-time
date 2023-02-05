@@ -90,6 +90,7 @@ function displayGames(response) {
   $('#game-section').empty();
   for (let i = 0; i < 8; i++) {
     // console.log(response[i].thumbnail);
+    var formatedDate = moment(response[i].release_date).format('DD-MM-YYYY');
     var colDiv = $("<div>").attr('class','col-md-6 col-sm-12 my-3');
 
     var cardDiv = $("<div>").attr("class","card");
@@ -98,7 +99,7 @@ function displayGames(response) {
     var cardBody = $("<div>").attr("class","card-body");
     var cardTitle = $("<h5>").attr("class","card-title").text(response[i].title);
     cardBody.append(cardTitle);
-    var cardText = $("<p>").attr("class","card-text").text(response[i].short_description);
+    var cardText = $("<p>").attr({class:"card-text text-wrap"}).text(response[i].short_description);
     cardBody.append(cardText);
     var genreHeading = $('<strong>').text('Genre: ');
     var genreP = $('<p>').text(response[i].genre);
@@ -112,7 +113,7 @@ function displayGames(response) {
     cardBody.append(gameUrl);
     cardDiv.append(cardBody);
     var cardFooter = $("<div>").attr("class","card-footer");
-    var releasedText = $("<small>").attr("class","text-muted").text(response[i].release_date);
+    var releasedText = $("<small>").attr("class","text-muted").text(formatedDate);
     var releasedHeading = $('<strong>').text('Released Date: ');
     cardFooter.append(releasedText)
     releasedText.prepend(releasedHeading);
@@ -128,6 +129,7 @@ function displayMoreGames(res) {
   for (let i = 0; i < res.length; i++) {
     // console.log(res);
     // console.log(res[i].name);
+    var formatedDate = moment(res[i].released).format('DD-MM-YYYY');
     var colDiv = $("<div>").attr('class','col-md-6 col-sm-12 my-3');
 
     var cardDiv = $("<div>").attr("class","card");
@@ -146,7 +148,7 @@ function displayMoreGames(res) {
     cardBody.append(ratingP);
     cardDiv.append(cardBody);
     var cardFooter = $("<div>").attr("class","card-footer");
-    var releasedText = $("<small>").attr("class","text-muted").text(res[i].released);
+    var releasedText = $("<small>").attr("class","text-muted").text(formatedDate);
     var releasedHeading = $('<strong>').text('Released Date: ');
     cardFooter.append(releasedText)
     releasedText.prepend(releasedHeading);
