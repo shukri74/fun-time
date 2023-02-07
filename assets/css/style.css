@@ -35,3 +35,8 @@ body {
     border-top: calc(40px + 4vw) solid transparent;
     border-right: 100vw solid rgb(0, 0, 0); 
 }
+
+.card-img-top{
+    height: 250px;
+
+}
