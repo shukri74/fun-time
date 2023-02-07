@@ -1,4 +1,4 @@
-# fun-time (project-1)
+# fun-time (project)
 Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry.
 ![image](https://user-images.githubusercontent.com/116843679/217380556-f84a12ab-c237-48e8-b637-df7d9f394cd6.png)
 
