@@ -145,7 +145,8 @@ function displayMoreGames(res) {
     var genreP = $('<p>').text(res[i].genres[0].name);
     genreP.prepend(genreHeading);
     cardBody.append(genreP);
-    var ratingP = $('<p>').text(res[i].rating);
+    var ratingP = $('<span>').attr("class","stars").text(res[i].rating);
+    // <span class="stars">4.8618164</span>
     var ratingHeading = $('<strong>').text('Rating: ');
     ratingP.prepend(ratingHeading);
     cardBody.append(ratingP);
@@ -157,10 +158,30 @@ function displayMoreGames(res) {
     releasedText.prepend(releasedHeading);
     cardDiv.append(cardFooter);
     colDiv.append(cardDiv);
+    // $(function() {
+    //   $('span.stars').stars();
+    // });
     $('#more-game-section').append(colDiv);
   }
   
 }
+
+
+// for rating stars
+// $.fn.stars = function() {
+//   return $(this).each(function() {
+//       // Get the value
+//       var val = parseFloat($(this).html());
+//       // Make sure that the value is in 0 - 5 range, multiply to get width
+//       var size = Math.max(0, (Math.min(5, val))) * 16;
+//       // Create stars holder
+//       var $span = $('<span />').width(size);
+//       // Replace the numerical value with stars
+//       $(this).html($span);
+//   });
+// }
+
+
 
 });
 
