@@ -5,12 +5,12 @@ Fun-time is a game searching app that would allow gamers to search for games on 
 
 
 ### technologies used in this project
-HTML
-bootstrap
-Jquery
+HTML,
+bootstrap,
+Jquery and
 two different API's
-freetogame.com
-rawg.io
+(freetogame.com and 
+rawg.io)
 Here is the deployed site of this application. https://shukri74.github.io/fun-time/
 
 
