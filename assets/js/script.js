@@ -34,8 +34,6 @@ $( document ).ready(function() {
     event.preventDefault();
   
     // Here we grab the text from the input box
-    // var alphabetical = $("#alphabetical").text().toLowerCase();
-    // console.log(alphabetical);
     var choice = $(event.target).val();
     console.log(choice);
   
@@ -62,8 +60,6 @@ $( document ).ready(function() {
     event.preventDefault();
   
     // Here we grab the text from the input box
-    // var alphabetical = $("#alphabetical").text().toLowerCase();
-    // console.log(alphabetical);
     var search = $("#search").val();
     console.log(search);
   
@@ -90,8 +86,6 @@ function displayGames(response) {
   $('#game-section').empty();
   
   for (let i = 0; i < 8; i++) {
-    // console.log(response[i].thumbnail);
-    // if(response[i].title != '/\d+/'){
       var formatedDate = moment(response[i].release_date).format('DD-MM-YYYY');
       var colDiv = $("<div>").attr('class','col-md-6 col-sm-12 my-3');
 
@@ -101,7 +95,7 @@ function displayGames(response) {
       var cardBody = $("<div>").attr("class","card-body");
       var cardTitle = $("<h5>").attr("class","card-title").text(response[i].title);
       cardBody.append(cardTitle);
-      var cardText = $("<p>").attr({class:"card-text text-wrap"}).text(response[i].short_description);
+      var cardText = $("<p>").attr({class:"card-text text-truncate",title: response[i].short_description}).text(response[i].short_description);
       cardBody.append(cardText);
       var genreHeading = $('<strong>').text('Genre: ');
       var genreP = $('<p>').text(response[i].genre);
@@ -122,7 +116,6 @@ function displayGames(response) {
       cardDiv.append(cardFooter);
       colDiv.append(cardDiv);
       $('#game-section').append(colDiv);
-    // }
   }
 }
 
@@ -130,8 +123,6 @@ function displayMoreGames(res) {
   $('#more-game-section').empty();
 
   for (let i = 0; i < res.length; i++) {
-    // console.log(res);
-    // console.log(res[i].name);
     var formatedDate = moment(res[i].released).format('DD-MM-YYYY');
     var colDiv = $("<div>").attr('class','col-md-6 col-sm-12 my-3');
 
@@ -145,8 +136,7 @@ function displayMoreGames(res) {
     var genreP = $('<p>').text(res[i].genres[0].name);
     genreP.prepend(genreHeading);
     cardBody.append(genreP);
-    var ratingP = $('<span>').attr("class","stars").text(res[i].rating);
-    // <span class="stars">4.8618164</span>
+    var ratingP = $('<p>').text(res[i].rating);
     var ratingHeading = $('<strong>').text('Rating: ');
     ratingP.prepend(ratingHeading);
     cardBody.append(ratingP);
@@ -158,31 +148,10 @@ function displayMoreGames(res) {
     releasedText.prepend(releasedHeading);
     cardDiv.append(cardFooter);
     colDiv.append(cardDiv);
-    // $(function() {
-    //   $('span.stars').stars();
-    // });
     $('#more-game-section').append(colDiv);
   }
   
 }
-
-
-// for rating stars
-// $.fn.stars = function() {
-//   return $(this).each(function() {
-//       // Get the value
-//       var val = parseFloat($(this).html());
-//       // Make sure that the value is in 0 - 5 range, multiply to get width
-//       var size = Math.max(0, (Math.min(5, val))) * 16;
-//       // Create stars holder
-//       var $span = $('<span />').width(size);
-//       // Replace the numerical value with stars
-//       $(this).html($span);
-//   });
-// }
-
-
-
 });
 
 
