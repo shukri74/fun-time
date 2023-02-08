@@ -47,6 +47,11 @@ a.nav-link {
     display: inline;
 }
 
+/* footer */
+.text-center {
+    margin-bottom: 0px;
+}
+
 /* Media Queries */
 
 /* @media only screen and (max-width: 979px) {
