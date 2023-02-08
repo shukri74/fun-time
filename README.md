@@ -1,8 +1,17 @@
 # fun-time (project)
 Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry.
 
+Desktop View
 
-<img src="assets/images/Application Image.png" alt="Image of Fun Time Application" style="width:500px;"/>
+<img src="assets/images/Application Image.png" alt="Desktop View of Fun Time Application" style="width:500px;"/>
+
+Mobile View
+
+<img src="assets/images/Fun Time Mobile View.jpg" alt="Mobile View of Fun Time Application" style="width:500px;"/>
+
+Tablet View
+
+<img src="assets/images/Fun Time Tablet View.jpg" alt="Tablet View of Fun Time Application" style="width:500px;"/>
 
 ## Project requirements
 
