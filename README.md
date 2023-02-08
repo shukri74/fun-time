@@ -39,3 +39,7 @@ Have a clean repository that meets quality coding standards (file structure, nam
 
 Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).
 
+## Usage
+
+To use our page, simply enter your preffered game genre or tag which describes the type of game you are looking for and click 'Search' and a list of results will be presented to you below.
+
