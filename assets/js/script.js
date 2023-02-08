@@ -78,29 +78,6 @@ $( document ).ready(function() {
       console.log(res)
       displayGames(res);
       
-<<<<<<< HEAD
-      console.log(results);
-      for (let i = 0; i < results.length; i++) {
-        var imgURL = results[i].background_image;
-        var gameDiv = $("<div class='col-sm-4'>");
-        var gameImage = $("<img>").attr({src: imgURL, width: "300px", height: "300px"});
-        gameDiv.append(gameImage);
-        var gameTitle = $("<h3>").text(results[i].name);
-        gameDiv.append(gameTitle);
-        var genreP = $("<p>").text(results[i].genres[0].name);
-        gameDiv.append(genreP);
-        var ratingP = $("<p>").text(results[i].rating);
-        gameDiv.append(ratingP);
-        var releasedDate = $("<p>").text(results[i].released);
-        gameDiv.append(releasedDate);
-        $("#game-section").append(gameDiv);
-
-      }
-      
-    div ui
-
-=======
->>>>>>> f358a37fdf3e91aadf729aa30c31b8f0128890a2
     });
   
   });
