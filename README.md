@@ -6,7 +6,7 @@ Fun-time is a game searching app that would allow gamers to search for games on 
 
 
 
-### technologies used in this project
+### Technologies used in this project
 HTML,
 bootstrap,
 Jquery and
