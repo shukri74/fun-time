@@ -2,7 +2,7 @@
 Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry.
 
 
-![image](https://user-images.githubusercontent.com/116843679/217380556-f84a12ab-c237-48e8-b637-df7d9f394cd6.png)
+<img src="assets/images/Application Image.png" alt="drawing" style="width:600px;"/>
 
 
 
@@ -43,5 +43,5 @@ Have a quality README (including a unique name, description, technologies used, 
 
 To use our page, simply enter your preffered game genre or tag which describes the type of game you are looking for and click 'Search' and a list of results will be presented to you below.
 
-Under your list of results, there is a section which shows other reccomended titles.
+Under your list of results, there is a section which shows other recommended titles.
 
