@@ -72,18 +72,24 @@ $( document ).ready(function() {
         "X-RapidAPI-Key": "6d8cefb524msh8e89bc188680a3ap10ab72jsne7d1c162c88c",
         "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com"
       },
-      method: "GET"
+      method: "GET",
+      statusCode: {
+        404: function() {
+          $('#game-section').empty();
+          var errorDiv = $('<div>').attr({class:'alert alert-primary',role:'alert'}).text("This category does not exist. Please try different one!");
+          $('#error').append(errorDiv);
+        }
+      }
     }).then(function(response) {
       var res = response;
-      console.log(res)
-      displayGames(res);
-      
+        displayGames(res);
     });
   
   });
 
 function displayGames(response) {
   $('#game-section').empty();
+  $('#error').empty();
   
   for (let i = 0; i < 8; i++) {
       var formatedDate = moment(response[i].release_date).format('DD-MM-YYYY');
