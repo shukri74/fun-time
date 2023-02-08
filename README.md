@@ -1,9 +1,19 @@
-# fun-time (project-1)
-Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry. This was made with bootstrap, jquery and two game server API's.
+# fun-time (project)
+Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry.
 
-### User story
-when user wants to find a game and does enter the name of the game, genre or release date then it should present with a list of games relsted to that search.
-secondly when user clicks o
+
+![image](https://user-images.githubusercontent.com/116843679/217380556-f84a12ab-c237-48e8-b637-df7d9f394cd6.png)
+
+
+
+### technologies used in this project
+HTML,
+bootstrap,
+Jquery and
+two different API's
+(freetogame.com and 
+rawg.io)
+Here is the deployed site of this application. https://shukri74.github.io/fun-time/
 
 
 
