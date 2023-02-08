@@ -12,8 +12,11 @@ body {
 
 /* Styling the Jumbotron */
 .jumbotron {
-    background-image: url(https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/7258853/483244_974602.jpeg);
-    background-size:100%;
+    background-image: url('../images/header-image.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    /* background-size:100%; */
+    /* height: 650px; */
     height: 700px;
     display: flex;
     align-items: center;
@@ -43,3 +46,22 @@ body {
 a.nav-link {
     display: inline;
 }
+
+/* Media Queries */
+
+/* @media only screen and (max-width: 979px) {
+    .container {
+        max-width: 850px;
+    }
+  
+
+}
+
+@media only screen and (max-width: 769px) {
+    .shape1 {
+        bottom: -410px;
+        left: 0px;
+    }
+   
+
+} */
