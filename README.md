@@ -2,20 +2,7 @@
 Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry.
 
 
-<img src="assets/images/Application Image.png" alt="Image of Fun Time Application" style="width:600px;"/>
-
-
-
-### Technologies used in this project
-HTML,
-bootstrap,
-Jquery and
-two different API's
-(freetogame.com and 
-rawg.io)
-Here is the deployed site of this application. https://shukri74.github.io/fun-time/
-
-
+<img src="assets/images/Application Image.png" alt="Image of Fun Time Application" style="width:500px;"/>
 
 ## Project requirements
 
@@ -39,6 +26,18 @@ Have a clean repository that meets quality coding standards (file structure, nam
 
 Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).
 
+## Technologies used in this project
+HTML
+
+Bootstrap
+
+jQuery
+
+Two different API's (freetogame.com and rawg.io)
+
+
+Deployed Application: https://shukri74.github.io/fun-time/
+
 ## Usage
 
 To use our page, simply enter your preffered game genre or tag which describes the type of game you are looking for and click 'Search' and a list of results will be presented to you below.
@@ -54,6 +53,8 @@ APIs:
 https://www.freetogame.com/api-doc
 
 https://rawg.io/apidocs
+
+jQuery : https://api.jqueryui.com/
 
 
 
