@@ -1,51 +1,13 @@
-# fun-time (project)
-Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry.
-
-Desktop View
-
-<img src="assets/images/Application Image.png" alt="Desktop View of Fun Time Application" style="width:500px;"/>
-
-Mobile View
-
-<img src="assets/images/Fun Time Mobile View.jpg" alt="Mobile View of Fun Time Application" style="width:500px;"/>
-
-Tablet View
-
-<img src="assets/images/Fun Time Tablet View.jpg" alt="Tablet View of Fun Time Application" style="width:500px;"/>
-
-## Project requirements
-
-Use Bootstrap.
-
-Be deployed to GitHub Pages.
-
-Be interactive (in other words, accept and respond to user input).
-
-Use at least two server-side APIs Links to an external site..
-
-Use modals instead of alerts, confirms, or prompts.
-
-Use client-side storage to store persistent data.
-
-Be responsive.
-
-Have a polished UI.
-
-Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, and so on).
-
-Have a quality README (including a unique name, description, technologies used, screenshot, and link to the deployed application).
-
-## Technologies used in this project
-HTML
-
-Bootstrap
-
-jQuery
-
-Two different API's (freetogame.com and rawg.io)
+# Fun Time App
 
 
-Deployed Application: https://shukri74.github.io/fun-time/
+## Description
+Fun-time is a game searching app that would allow gamers to search for games on different criteria such as genre, name or release date. when the user does a search then it will render number of games related to their search enquiry. Here is the deployed app link [Fun Time](https://shukri74.github.io/fun-time/)
+
+
+## Installation
+To use this Web App you do not need to install any software or tool.You just need a browser and internet connection to visit this website.
+
 
 ## Usage
 
@@ -53,17 +15,46 @@ To use our page, simply enter your preffered game genre or tag which describes t
 
 Under your list of results, there is a section which shows other recommended titles.
 
+
+## Technologies used in this Application
+
+HTML5
+
+Bootstrap 4
+
+jQuery
+
+Two different API's (freetogame.com and rawg.io)
+
+
+### Desktop View screenshort:
+
+![Desktop View](assets/images/desktop-view.png)
+
+### Tablet View screenshort:
+
+![Tablet View](assets/images/tablet-view.png)
+
+
+### Mobile View screenshort:
+
+![Mobile View](assets/images/mobile-view.png)
+
+
 ## Credits
 
-Bootstrap 4 : https://getbootstrap.com/docs/4.4
+[Bootstrap 4](https://getbootstrap.com/docs/4.0)
 
-APIs: 
+[Freetogame Api](https://www.freetogame.com/api-doc)
 
-https://www.freetogame.com/api-doc
+[RAWG Api](https://api.rawg.io/docs/#operation/games_list)
 
-https://rawg.io/apidocs
+[JQuery](https://api.jqueryui.com/)
 
-jQuery : https://api.jqueryui.com/
+
+## License
+
+Copyright (c) 2023 Group-13
 
 
 
