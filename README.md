@@ -16,6 +16,17 @@ To use our page, simply enter your preffered game genre or tag which describes t
 Under your list of results, there is a section which shows other recommended titles.
 
 
+## Technologies used in this Application
+
+HTML5
+
+Bootstrap 4
+
+jQuery
+
+Two different API's (freetogame.com and rawg.io)
+
+
 ### Desktop View screenshort:
 
 ![Desktop View](assets/images/desktop-view.png)
@@ -28,17 +39,6 @@ Under your list of results, there is a section which shows other recommended tit
 ### Mobile View screenshort:
 
 ![Mobile View](assets/images/mobile-view.png)
-
-
-## Technologies used in this Application
-
-HTML5
-
-Bootstrap 4
-
-jQuery
-
-Two different API's (freetogame.com and rawg.io)
 
 
 ## Credits
